@@ -28,3 +28,8 @@ sup {
   top: -0.5em;
   left: .05em;
 }
+
+.slide h2.shout {
+  font-size: 2em;
+  line-height: 1.5;
+}

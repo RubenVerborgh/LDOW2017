@@ -33,3 +33,14 @@ sup {
   font-size: 2em;
   line-height: 1.5;
 }
+
+.slide ul.inline li {
+  display: inline-block;
+}
+.slide ul.inline li:after {
+  content: ", ";
+  display: inline;
+}
+.slide ul.inline li:last-child:after {
+  content: "";
+}

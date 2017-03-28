@@ -20,3 +20,11 @@ p.venue {
   font-size: 1.12em;
   margin-top: -2.5em;
 }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em;
+  left: .05em;
+}

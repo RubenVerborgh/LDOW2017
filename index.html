@@ -276,10 +276,42 @@
       is too expensive for personal data.
     </h2>
     <ul>
-      <li class="next">I can’t afford a SPARQL endpoint.</li>
+      <li class="next">
+        I can’t mark up all data with multiple ontologies.
+        <ul>
+          <li>difficult to maintain</li>
+          <li>hard to express in RDFa Lite</li>
+        </ul>
+      </li>
       <li class="next">I can’t afford ad-hoc reasoning.</li>
-      <li class="next">I can’t afford a SPARQL endpoint<br><em>with</em> ad-hoc reasoning.</li>
+      <li class="next">I can’t afford a SPARQL endpoint.</li>
     </ul>
+  </div>
+
+  <div class="slide" id="pipeline">
+    <h2>
+      I designed a simple ETL pipeline<br>
+      to enrich and publish my website’s data.
+    </h2>
+    <ol>
+      <li class="next"><strong>Extract</strong> RDF triples from<br>Turtle and HTML+RDFa documents.</li>
+      <li class="next"><strong>Reason</strong>  over this data and its ontologies.</li>
+      <li class="next"><strong>Publish</strong> the result in a queryable interface.</li>
+    </ol>
+  </div>
+
+  <div class="slide" id="reasoning">
+    <h2>
+      Reasoning fills ontological gaps<br>
+      before querying happens.
+    </h2>
+    <ol>
+      <li class="next"><strong>Skolemize</strong> ontologies.</li>
+      <li class="next">Compute <strong>deductive closure</strong> of ontologies.</li>
+      <li class="next">Compute <strong>deductive closure</strong> of ontologies and data.</li>
+      <li class="next"><strong>Subtract</strong> 2 from 3 to obtain only the enriched data.</li>
+      <li class="next"><strong>Remove</strong> leftover skolemized IRIs.</li>
+    </ol>
   </div>
 
   <div class="toc slide" id="toc-questions">

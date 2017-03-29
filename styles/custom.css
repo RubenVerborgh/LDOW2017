@@ -44,3 +44,14 @@ sup {
 .slide ul.inline li:last-child:after {
   content: "";
 }
+
+.slide dl.inline > dt {
+  float: left;
+  clear: none;
+}
+.slide dl.inline > dt:before {
+  content: " – ";
+}
+.slide dl.inline > dt:first-child:before {
+  content: "";
+}

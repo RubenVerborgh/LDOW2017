@@ -200,6 +200,76 @@
     </ul>
   </div>
 
+  <div class="slide" id="traversal-issues">
+    <h2>
+      Linked Data traversal-based querying<br>
+      does not find all answers.
+    </h2>
+    <ul>
+      <li>
+        people I know
+        <dl class="next inline">
+          <dt>traversal</dt>
+          <dd>14</dd>
+          <dt>actual</dt>
+          <dd>196</dd>
+        </dl>
+      </li>
+      <li>
+        publications I wrote
+        <dl class="next inline">
+          <dt>traversal</dt>
+          <dd>134</dd>
+          <dt>actual</dt>
+          <dd>205</dd>
+        </dl>
+      </li>
+      <li>
+        works I cite
+        <dl class="next inline">
+          <dt>traversal</dt>
+          <dd>0</dd>
+          <dt>actual</dt>
+          <dd>46</dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+
+  <div class="slide" id="traversal-causes">
+    <h2>
+      Traversing clients only see<br>
+      a limited part of the data.
+    </h2>
+    <ul>
+      <li class="next">
+        Searching without a map is hard.
+        <ul>
+          <li>especially with one-directional linking</li>
+        </ul>
+      </li>
+      <li class="next">
+        The semantic constructs in the query<br>
+        are seldom identical to those of the data.
+        <ul>
+          <li class="next">
+            <code>foaf:Person</code>,
+            <code>schema:Person</code>,
+            or
+            <code>wikidata:Q5</code>?
+          </li>
+          <li class="next">
+            <code>rdfs:label</code>,
+            <code>dc:title</code>,
+            <code>foaf:name</code>,
+            or
+            <code>schema:name</code>?
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
   <div class="toc slide" id="toc-questions">
     <h2>Piecing the puzzle</h2>
     <ul>

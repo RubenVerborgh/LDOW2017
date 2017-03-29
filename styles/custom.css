@@ -60,11 +60,15 @@ sup {
   text-align: right;
   padding-right: 45px;
 }
+.slide table th[colspan] {
+  text-align: center;
+  color: #453688 !important;
+}
 .slide thead th {
   font-style: normal !important;
 }
 .slide tbody th {
-  color: #453688;
+  color: #453688 !important;
 }
 .slide tbody tr:last-child th {
   padding-bottom: 30px;
@@ -72,4 +76,7 @@ sup {
 .slide tfoot {
   font-weight: bold;
   color: #453688;
+}
+table.alternate tr > *:nth-child(2n) {
+  color: #999999;
 }

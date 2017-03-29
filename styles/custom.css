@@ -55,3 +55,21 @@ sup {
 .slide dl.inline > dt:first-child:before {
   content: "";
 }
+
+.slide table th, .slide table td {
+  text-align: right;
+  padding-right: 45px;
+}
+.slide thead th {
+  font-style: normal !important;
+}
+.slide tbody th {
+  color: #453688;
+}
+.slide tbody tr:last-child th {
+  padding-bottom: 30px;
+}
+.slide tfoot {
+  font-weight: bold;
+  color: #453688;
+}

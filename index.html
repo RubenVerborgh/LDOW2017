@@ -230,7 +230,7 @@
           <dt>traversal</dt>
           <dd>0</dd>
           <dt>actual</dt>
-          <dd>46</dd>
+          <dd>33</dd>
         </dl>
       </li>
     </ul>
@@ -305,8 +305,8 @@
 
   <div class="slide" id="reasoning">
     <h2>
-      Reasoning fills ontological gaps<br>
-      before querying happens.
+      Reasoning on the data and its ontologies<br>
+      makes hidden semantics explicit.
     </h2>
     <ol>
       <li class="next"><strong>Skolemize</strong> ontologies.</li>
@@ -315,6 +315,57 @@
       <li class="next"><strong>Subtract</strong> 2 from 3 to obtain only the enriched data.</li>
       <li class="next"><strong>Remove</strong> leftover skolemized IRIs.</li>
     </ol>
+  </div>
+
+  <div class="slide" id="reasoning-numbers">
+    <h2>
+      Reasoning expresses the <em>same</em> data<br>
+      in <em>different</em> ways for different clients.
+    </h2>
+    <table>
+      <thead>
+        <tr><th>&nbsp;</th><th>time (s)</th><th># triples</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>extraction</th>                                 <td>170</td><td> 17,000</td></tr>
+      </tbody>
+      <tbody>
+        <tr class="next"><th>skolemization ontologies</th>      <td>  1</td><td> 44,000</td></tr>
+        <tr class="next"><th>closure ontologies</th>            <td> 39</td><td>145,000</td></tr>
+        <tr class="next"><th>closure ontologies &amp; data</th> <td> 62</td><td>183,000</td></tr>
+        <tr class="next"><th>subtraction</th>                   <td>  1</td><td> 39,000</td></tr>
+        <tr class="next"><th>removal</th>                       <td>  1</td><td> 36,000</td></tr>
+      </tbody>
+      <tfoot>
+        <tr class="next"><th>total</th>                         <td>273</td><td> 36,000</td></tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div class="slide" id="reasoning-results">
+    <h2>
+      Reasoning fills ontological gaps<br>
+      before querying happens.
+    </h2>
+    <table>
+      <thead>
+        <tr><th>&nbsp;</th><th># pre</th><th># post</th></tr>
+      </thead>
+      <tbody class="next">
+        <tr><th><code>dc:title</code></th>              <td>657</td><td>714</td></tr>
+        <tr><th><code>rdfs:label</code></th>            <td>473</td><td>714</td></tr>
+        <tr><th><code>foaf:name</code></th>             <td>394</td><td>714</td></tr>
+        <tr><th><code>schema:name</code></th>           <td>439</td><td>714</td></tr>
+      </tbody>
+      <tbody class="next">
+        <tr><th><code>schema:isPartOf</code></th>       <td>263</td><td>263</td></tr>
+        <tr><th><code>schema:hasPart</code></th>        <td>  0</td><td>263</td></tr>
+      </tbody>
+      <tbody class="next">
+        <tr><th><code>cito:cites</code></th>            <td>  0</td><td> 33</td></tr>
+        <tr><th><code>cito:citesAsAuthority</code></th> <td> 14</td><td> 14</td></tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="toc slide" id="toc-questions">

@@ -238,52 +238,16 @@
     </ul>
   </div>
 
-  <div class="slide" id="traversal-issues">
-    <h2>
-      Linked Data traversal-based querying<br>
-      does not find all answers.
-    </h2>
-    <ul>
-      <li>
-        people I know
-        <dl class="next inline">
-          <dt>traversal</dt>
-          <dd>14</dd>
-          <dt>actual</dt>
-          <dd>196</dd>
-        </dl>
-      </li>
-      <li>
-        publications I wrote
-        <dl class="next inline">
-          <dt>traversal</dt>
-          <dd>134</dd>
-          <dt>actual</dt>
-          <dd>205</dd>
-        </dl>
-      </li>
-      <li>
-        works I cite
-        <dl class="next inline">
-          <dt>traversal</dt>
-          <dd>0</dd>
-          <dt>actual</dt>
-          <dd>33</dd>
-        </dl>
-      </li>
-    </ul>
-  </div>
-
   <div class="slide" id="traversal-causes">
     <h2>
-      Traversing clients only see<br>
-      a limited part of the data.
+      Traversal-based Linked Data querying<br>
+      cannot answer all questions adequately.
     </h2>
     <ul>
       <li class="next">
-        Searching without a map is hard.
+        Completeness cannot be guaranteed.
         <ul>
-          <li>especially with one-directional linking</li>
+          <li>Web linking is unidirectional.</li>
         </ul>
       </li>
       <li class="next">
@@ -314,15 +278,16 @@
       is too expensive for personal data.
     </h2>
     <ul>
+      <li class="next">Hosting a SPARQL endpoint is expensive.</li>
+      <li class="next">A SPARQL endpoint with reasoning even more.</li>
       <li class="next">
-        I can’t mark up all data with multiple ontologies.
+        Marking up all data in two directions<br>
+        and with multiple ontologies is unfeasible.
         <ul>
           <li>difficult to maintain</li>
           <li>hard to express in RDFa Lite</li>
         </ul>
       </li>
-      <li class="next">I can’t afford ad-hoc reasoning.</li>
-      <li class="next">I can’t afford a SPARQL endpoint.</li>
     </ul>
   </div>
 

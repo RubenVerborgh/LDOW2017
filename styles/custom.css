@@ -80,3 +80,9 @@ sup {
 table.alternate tr > *:nth-child(2n) {
   color: #999999;
 }
+
+p.actions {
+  margin-top: 1em !important;
+  font-weight: bold;
+  font-style: italic;
+}

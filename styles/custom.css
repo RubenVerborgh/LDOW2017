@@ -70,7 +70,7 @@ sup {
 .slide tbody th {
   color: #453688 !important;
 }
-.slide tbody tr:last-child th {
+.slide tbody:not(.tight) tr:last-child th {
   padding-bottom: 30px;
 }
 .slide tfoot {
